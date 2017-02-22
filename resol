@@ -1,0 +1,37 @@
+# This is Python 2 import sys
+
+try:
+
+line = sys.stdin.readline()
+
+valores = int (line)
+
+if valores < 0 or valores > 2000: print '0'
+
+else:
+
+lista = []
+
+for i in range(0,valores):
+
+valor = sys.stdin.readline()
+
+try:
+
+valor = int (valor)
+
+if valor < 0 or valor > 20000: print '0' exit()
+
+else: lista.append(valor)
+
+except ValueError:
+
+print '0' exit()
+
+maximo = max (lista) minimo = min (lista)
+
+print (maximo - minimo)
+
+except ValueError:
+
+print '0'
